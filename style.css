@@ -2,14 +2,57 @@
 /// Global /////
 /////////////*/
 
+html {
+      box-sizing: border-box;
+    }
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
+    
+
+body {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      margin-left: 10%;
+      margin-right: 10%;
+     
+}
+.top, .bottom {
+      display: flex;
+      flex-direction: row;
+      min-height: 49%;
+     
+}
 /* //////////////////
 /// Top of page ////
 ///////////////////*/
 
+.top  {
+      
+}
+.info {
+      background-color: rgb(24, 56, 56);
+  
+      width: 500px;
+}
+
+.ratings {background-color: blueviolet;
+      
+}
+
 /* //////////////////
 /// Bottom of page ////
 ///////////////////*/
+.bottom {
+      flex: 1 1 auto;
+}
 
+.testi-card {
+      background-color: hsl(300, 43%, 22%);
+      height: 60%;
+      border-radius: 10px;
+}
 
 /* //////////////////
 /// footer Stuff ////
