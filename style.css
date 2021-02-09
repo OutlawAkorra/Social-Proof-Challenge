@@ -12,18 +12,10 @@ html {
 
 body {
       height: 100vh;
-      display: flex;
-      flex-direction: column;
       margin-left: 10%;
       margin-right: 10%;
-     
 }
-.top, .bottom {
-      display: flex;
-      flex-direction: row;
-      min-height: 49%;
-     
-}
+
 /* //////////////////
 /// Top of page ////
 ///////////////////*/
@@ -31,27 +23,69 @@ body {
 .top  {
       
 }
+
+h1 {
+       
+}
 .info {
       background-color: rgb(24, 56, 56);
-  
-      width: 500px;
+      
+      width: 400px;
 }
 
-.ratings {background-color: blueviolet;
+.ratings {
+      width: 500px;
       
+}
+
+.ratecard {
+      width: 400px;
+      height: 70px;
+      background-color: hsl(300, 24%, 96%);
+      border-radius: 10px;
+}
+
+.rating-text {
+      color:hsl(300, 43%, 22%);
 }
 
 /* //////////////////
 /// Bottom of page ////
 ///////////////////*/
 .bottom {
-      flex: 1 1 auto;
+      justify-content: space-between;
 }
+
+/*//////////////////////////
+///////Card styling////////
+/////////////////////////*/
 
 .testi-card {
       background-color: hsl(300, 43%, 22%);
-      height: 60%;
+      height: 250px;
+      width: 400px;
       border-radius: 10px;
+      padding: 2px;
+}
+
+.testimonial-photo {
+      height: 60px;
+      width: 60px;
+      border-radius: 50px;
+}
+.testimonial-name {
+      color: hsl(0, 0%, 100%);
+}
+
+.testimonial-verified {
+      color: hsl(333, 80%, 67%);
+}
+
+.testi-words {
+      color: hsl(0, 0%, 100%);
+      text-align: left;
+      letter-spacing: 1px;
+      line-height: 20px;
 }
 
 /* //////////////////
