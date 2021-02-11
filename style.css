@@ -11,81 +11,146 @@ html {
     
 
 body {
+      font-family: 'Spartan', sans-serif;
       height: 100vh;
       margin-left: 10%;
       margin-right: 10%;
+      margin-top: 5%;
+      background-color: hsl(300, 24%, 96%);
+      background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
+      background-repeat: no-repeat;
+      background-position: top -5px left 5px, bottom 150px right 50px;
+      background-size: 40% 40%, 70% 70%;
+      overflow: hidden;
+   
+    /* top -525px left -750px, bottom -520px right -775px; */
+}
+
+.row {
+      height: 49vh;
+      justify-content: space-between;
 }
 
 /* //////////////////
 /// Top of page ////
 ///////////////////*/
 
-.top  {
-      
-}
 
 h1 {
-       
+font-size: 50px;
+margin: 0;
+
 }
-.info {
-      background-color: rgb(24, 56, 56);
-      
-      width: 400px;
+.info {padding-top: 50px;
+       width: 500px;
+}
+
+.info-text {
+      line-height: 145%;
 }
 
 .ratings {
-      width: 500px;
-      
+      width: 700px;
+      height: 300px;
+      float: right;
+      padding-top: 50px;
 }
 
 .ratecard {
-      width: 400px;
-      height: 70px;
-      background-color: hsl(300, 24%, 96%);
+      width: 500px;
+      height: 60px;
+      background-color: hsl(303, 10%, 53%);
       border-radius: 10px;
+      float: right;
+      padding-top: 20px;
+      padding-left: 30px;
+}
+
+#ratecard1 {
+      float: left;
+     
+}
+
+#ratecard2 {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin-right: 100px;
+}
+
+.icon {
+      margin-left: 5px;
 }
 
 .rating-text {
+      display: inline;
       color:hsl(300, 43%, 22%);
+      margin-left: 30px;
+      
 }
+
 
 /* //////////////////
 /// Bottom of page ////
 ///////////////////*/
-.bottom {
-      justify-content: space-between;
-}
+
 
 /*//////////////////////////
 ///////Card styling////////
 /////////////////////////*/
 
-.testi-card {
+.testi-card1 {
       background-color: hsl(300, 43%, 22%);
       height: 250px;
       width: 400px;
       border-radius: 10px;
       padding: 2px;
 }
+.testi-card2 {
+      background-color: hsl(300, 43%, 22%);
+      height: 250px;
+      width: 400px;
+      border-radius: 10px;
+      padding: 2px;
+      margin-top: 25px;
+}
+.testi-card3 {
+      background-color: hsl(300, 43%, 22%);
+      height: 250px;
+      width: 400px;
+      border-radius: 10px;
+      padding: 2px;
+      margin-top: 50px;
+}
 
 .testimonial-photo {
       height: 60px;
       width: 60px;
       border-radius: 50px;
+      margin-top: 30px;
+      margin-left: 25px;
+      margin-right: 20px;
 }
 .testimonial-name {
+      margin-bottom: 0px;
       color: hsl(0, 0%, 100%);
 }
 
 .testimonial-verified {
+      margin-top: 5px;
       color: hsl(333, 80%, 67%);
 }
 
+.verifiedInfo {
+      display: inline-block;
+}
+.photorow {
+      display: inline;
+}
+
 .testi-words {
-      color: hsl(0, 0%, 100%);
-      text-align: left;
-      letter-spacing: 1px;
-      line-height: 20px;
+      color: hsl(303, 10%, 53%);
+      text-align: center;
+      line-height: 18px;
 }
 
 /* //////////////////
@@ -95,6 +160,11 @@ h1 {
 .attribution {
       font-size: 11px;
       text-align: center;
+      position: absolute;
+      bottom: 0;
+      width: 1440px;
+      height: 2.5rem;
+      justify-content: center;
 }
 
 .attribution a {
